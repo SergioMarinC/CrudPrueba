@@ -1,0 +1,23 @@
+#application.properties
+jpa.hibernate update actualiza las tablas
+
+#UserModel
+@Entity significa que representa una columna de nuestra base de datos
+@Table(name = "user") le da nombre a la tabla, si no se llamaría como la clase
+
+#Repository
+Permite hacer consultas a la base de datos
+
+En el service se realiza la petición, en el controller se instancia el servicio y se retorna la petición del servicio
+Tipo Optional devuelve algo o null
+
+@GetMapping(path = "/{id}")
+Se usa para que refleje la id que busquemos como dirección
+
+Crear la base de datos user
+http://localhost:8000/user/2
+{
+    "firstName": "Juan",
+    "lastName": "Coco",
+    "email": "juan@pepe.com"
+}
